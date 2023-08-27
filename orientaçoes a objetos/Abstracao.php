@@ -43,12 +43,12 @@ class Pessoas
             exit();}
 
      }
-         private function setCor(string $cor): void
+         private function setCor(string $cor): self
      {
         $opcoes = ["Branco","Negro","Moreno"];
-        if(in_array($genero, $opcoes)); {
+        if(in_array($cor, $opcoes)); {
         $this -> cor = $cor;
-        return;
+        return $this;
      }
     }
          public function setAltura(float $altura): void
